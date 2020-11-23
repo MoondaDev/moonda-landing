@@ -1,4 +1,5 @@
 module.exports = {
+    pathPrefix: "/moonda-landing",
     siteMetadata: {
         title: `HiStaff`,
         description: `Make your Staff and Workspace Happy`,
