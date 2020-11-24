@@ -2,10 +2,6 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import featureImage from "../../static/images/hero.png";
-import thumbnailEvent from "../../static/images/feature-event.png"
-import thumbnailBoard from "../../static/images/feature-board.png"
-import thumbnailNews from "../../static/images/feature-news.png"
 import thumbnailTeams from "../../static/images/feature-team.png"
 import thumbnailStaff from "../../static/images/feature-user.png"
 import lend_context1 from "../../static/images/index/lend_context1.png";
@@ -17,9 +13,14 @@ const IndexPage = () => (
         <SEO title="Make your Staff and Workspace Happy"/>
 
         <div className={"page-header home"}>
-            <h1>Make your Staff and Workspace Happy</h1>
-            <p>HiStaff gives your complex the opportunity to increase the percentage of happiness<br/>and enjoyment of your staff and as a result, bring productivity to your workspace.</p>
-            <img alt={"Dashboard"} src={featureImage}/>
+            <div className={"container"}>
+                <h1>클릭 한번으로<br/>나에게 맞는<br/>우리동네 취미강좌 추천</h1>
+                <div className={"my-button"}>
+                    <a href={"https://app.histaff.io"}>앱 출시 알림 받기</a>
+                </div>
+                <p>이미 <b>1,750명</b>이 출시 알림을 신청했습니다.</p>
+                {/* <img alt={"Dashboard"} src={featureImage}/> */}
+            </div>
         </div>
 
         <div className={"container"}>
@@ -34,7 +35,7 @@ const IndexPage = () => (
 
                         <div className={"col-6"}>
                             <div className={"feature__content"}>
-                                <h2>우리동네에 문화센터가 이렇게 만다는 거, 알고 계셨나요?</h2>
+                                <h2>우리동네에 문화센터가 이렇게 많다는 거, 알고 계셨나요?</h2>
                                 <p>저희는 몰랐습니다.<br/>
                                 심지어 문화센터 정보가 다 흩어져 있어 <br/>
                                 알맞은 강좌를 찾고 선택하기가 어려웠지요.</p>

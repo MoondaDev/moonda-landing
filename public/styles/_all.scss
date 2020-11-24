@@ -37,27 +37,11 @@ body {
     .top-menu {
       display: flex;
       justify-content: space-between;
-
-      .get-started {
-        a {
-          width: 160px;
-          height: 47px;
-          font-style: normal;
-          font-weight: bold;
-          font-size: 16px;
-          line-height: 47px;
-          display: block;
-          background: #8953B7;
-          border-radius: 4px;
-          text-align: center;
-          color: #FFFFFF;
-        }
-      }
     }
   }
 
   .page-header {
-    text-align: center;
+    text-align: left;
     padding: 100px 0 100px 0;
     background-color: #fdfaff;
     border-radius: 0px 0px 40px 40px;
@@ -91,8 +75,20 @@ body {
       max-width: 65%;
     }
 
-    &.home {
-      padding-bottom: 30px;
+    .my-button {
+      a {
+        width: 160px;
+        height: 47px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 47px;
+        display: block;
+        background: #599b2e;
+        border-radius: 4px;
+        text-align: center;
+        color: #FFFFFF;
+      }
     }
 
     @media screen and (max-width: $break-small) {
