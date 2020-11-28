@@ -9,7 +9,7 @@ import lend_context5 from "../../static/images/index/lend_context5.png";
 
 const IndexPage = () => (
     <Layout>
-        <SEO title="Make your Staff and Workspace Happy"/>
+        <SEO title="문화센터 다모아, 문다!"/>
 
         <div className={"page-header home"}>
             <div className={"container"}>

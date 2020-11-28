@@ -1,9 +1,9 @@
 module.exports = {
     pathPrefix: "/moonda-landing",
     siteMetadata: {
-        title: `HiStaff`,
-        description: `Make your Staff and Workspace Happy`,
-        author: `@mostafasoufi`,
+        title: `문다`,
+        description: `문화센터 다모아, 문다!`,
+        author: `@louiminister`,
     },
     plugins: [
         `gatsby-plugin-react-helmet`,
@@ -25,7 +25,7 @@ module.exports = {
                 background_color: `#663399`,
                 theme_color: `#FF54AC`,
                 display: `minimal-ui`,
-                icon: `${__dirname}/static/images/histaff.png`, // This path is relative to the root of the site.
+                icon: `${__dirname}/static/images/moonda.png`, // This path is relative to the root of the site.
             },
         },
         `gatsby-plugin-sass`,

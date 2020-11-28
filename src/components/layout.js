@@ -11,7 +11,7 @@ import {StaticQuery, graphql, Link} from "gatsby"
 
 import Header from "./header"
 import "../../static/styles/main.scss"
-import logo from "../../static/images/logo.svg"
+import logo from "../../static/images/logo_.svg"
 import iconTwitter from "../../static/images/icon-twitter.svg"
 import iconLinkedin from "../../static/images/icon-linkedin.svg"
 import iconGitHub from "../../static/images/icon-github.svg"
@@ -42,7 +42,7 @@ const Layout = ({children}) => (
                                 </div>
 
                                 <div className={"about"}>
-                                    <p>A software that was created with the goal of solving the problems of Human Resources in small and medium-sized businesses.</p>
+                                    <p>문다는 사용자의 성향 분석을 통해 최적화된 지역기반 문화센터 강좌를 추천해주는 모바일 플랫폼 입니다.</p>
                                 </div>
                             </div>
                         </div>
@@ -77,9 +77,6 @@ const Layout = ({children}) => (
                         <div className={"col-3"}>
                             <div className={"widget__item"}>
                                 <div className={"social"}>
-                                    <a href="https://twitter.com/histaffio" target={"_blank"} title={"Twitter"}><img alt={"Twitter"} src={iconTwitter}/></a>
-                                    <a href="https://www.linkedin.com/company/histaff/" target={"_blank"} title={"LinkedIn"}><img alt={"LinkedIn"} src={iconLinkedin}/></a>
-                                    <a href="https://github.com/histaff" target={"_blank"} title={"GitHub"}><img alt={"GitHub"} src={iconGitHub}/></a>
                                     <a href="https://www.instagram.com/histaff.io/" target={"_blank"} title={"Instagram"}><img alt={"Instagram"} src={iconInstagram}/></a>
                                 </div>
                             </div>
