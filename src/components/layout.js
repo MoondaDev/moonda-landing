@@ -12,9 +12,6 @@ import {StaticQuery, graphql, Link} from "gatsby"
 import Header from "./header"
 import "../../static/styles/main.scss"
 import logo from "../../static/images/logo_.svg"
-import iconTwitter from "../../static/images/icon-twitter.svg"
-import iconLinkedin from "../../static/images/icon-linkedin.svg"
-import iconGitHub from "../../static/images/icon-github.svg"
 import iconInstagram from "../../static/images/icon-instagram.svg"
 
 const Layout = ({children}) => (
@@ -77,7 +74,7 @@ const Layout = ({children}) => (
                         <div className={"col-3"}>
                             <div className={"widget__item"}>
                                 <div className={"social"}>
-                                    <a href="https://www.instagram.com/histaff.io/" target={"_blank"} title={"Instagram"}><img alt={"Instagram"} src={iconInstagram}/></a>
+                                    <a href="https://www.instagram.com/official_moonda/" target={"_blank"} title={"Instagram"}><img alt={"Instagram"} src={iconInstagram}/></a>
                                 </div>
                             </div>
                         </div>
