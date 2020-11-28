@@ -1,12 +1,11 @@
 import React from "react"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import thumbnailTeams from "../../static/images/feature-team.png"
-import thumbnailStaff from "../../static/images/feature-user.png"
 import lend_context1 from "../../static/images/index/lend_context1.png";
 import lend_context2 from "../../static/images/index/lend_context2.png";
 import lend_context3 from "../../static/images/index/lend_context3.png";
+import lend_context4 from "../../static/images/index/lend_context4.png";
+import lend_context5 from "../../static/images/index/lend_context5.png";
 
 const IndexPage = () => (
     <Layout>
@@ -93,7 +92,7 @@ const IndexPage = () => (
 
                         <div className={"col-6 first"}>
                             <div className={"thumbnail"}>
-                                <img alt={"Team"} src={thumbnailTeams}/>
+                                <img alt={"Team"} src={lend_context4}/>
                             </div>
                         </div>
                     </div>
@@ -103,7 +102,7 @@ const IndexPage = () => (
                     <div className={"row"}>
                         <div className={"col-6 first"}>
                             <div className={"thumbnail"}>
-                                <img alt={"Users"} src={thumbnailStaff}/>
+                                <img alt={"Users"} src={lend_context5}/>
                             </div>
                         </div>
 
