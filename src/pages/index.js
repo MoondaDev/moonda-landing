@@ -119,17 +119,18 @@ const IndexPage = () => (
             </div>
         </div>
 
-        <div className={"call-to-action"}>
-            <div className={"container"}>
-                <div className={"call-to-action__content"}>
-                    <h2>Sign up for free</h2>
-                    <p>Sign up and start increasing the productivity of your business with HiStaff.</p>
+        <div className={"survey-component"}>
+                <div className={"head-content"}>
+                    <h2>2021년 1월, 문다가 여러분을 찾아갑니다.</h2>
+                    <p>문다 앱이 출시되면 가장 먼저 알려드릴게요.</p>
+                    <div className={"text-input-wrapper"}>
+                        <input type="email" placeholder="전화번호 또는 이메일"></input>
+                        <textarea rows='5' placeholder="기대평(선택)"></textarea>
+                        <button>
+                            알림 받기
+                        </button>
+                    </div>
                 </div>
-
-                <div className={"button"}>
-                    <a href="https://app.histaff.io" target={"_blank"}>Get Started</a>
-                </div>
-            </div>
         </div>
     </Layout>
 )
