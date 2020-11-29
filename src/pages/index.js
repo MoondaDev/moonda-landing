@@ -27,10 +27,9 @@ const IndexPage = () => {
                                 앱 출시 알림 받기
                             </div>
                             <p>이미 <b>1,750명</b>이 출시 알림을 신청했습니다.</p>
-                            {/* <img alt={"Dashboard"} src={featureImage}/> */}
                         </div>
                         <div className={"col-4"}>
-                            <img alt={"Dashboard"} src={smart_phone} width="100%"/> 
+                            <img alt={"Dashboard"} src={smart_phone}/> 
                         </div>
                     </div>
                 </div>
