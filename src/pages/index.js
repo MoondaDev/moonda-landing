@@ -41,11 +41,11 @@ const IndexPage = () => {
                 <div className={"container"}>
                     <div className={"row"}>
                         <div className={"col-8"}>
-                            <h1>클릭 한번으로<br/>나에게 맞는<br/>우리동네 취미강좌 추천</h1>
+                            <h1>클릭 한 번으로<br/>나에게 맞는<br/>우리동네 취미강좌 추천</h1>
                             <div className={"my-button"} onClick={executeScroll}>
                                 앱 출시 알림 받기
                             </div>
-                            <p>이미 <b style="font-weight: bold">17명</b>이 출시 알림을 신청했습니다.</p>
+                            <p>이미 <b>17명</b>이 출시 알림을 신청했습니다.</p>
                         </div>
                         <div className={"col-4"}>
                             <img alt={"Dashboard"} src={smart_phone}/> 
