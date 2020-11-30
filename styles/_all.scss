@@ -1,11 +1,12 @@
 $break-small: 719px;
 
 body {
-  font-family: Inter;
+  font-family: Noto Sans KR;
   color: #797283;
 
+
   p {
-    font-family: Inter;
+    font-family: Noto Sans KR;
   }
 
   h1,
@@ -14,7 +15,7 @@ body {
   h4,
   h5,
   h6 {
-    font-family: PT Serif;
+    font-family: Noto Sans KR;
     line-height: 43px;
     //color: #1E1C21;
   }
@@ -95,7 +96,7 @@ body {
         font-size: 16px;
         line-height: 47px;
         display: block;
-        background: #599b2e;
+        background: #36AA46;
         border-radius: 4px;
         text-align: center;
         color: #ffffff;
@@ -177,7 +178,7 @@ body {
   }
 
   .survey-component {
-    background-color: #76b873;
+    background-color: #36AA46;
     color: #ffffff;
     padding: 15px 0;
     border-radius: 40px 40px 0px 0px;
@@ -386,7 +387,7 @@ body {
     h4,
     h5,
     h6 {
-      font-family: Inter;
+      font-family: Noto Sans KR;
     }
 
     .title {
@@ -440,7 +441,7 @@ body {
           font-size: 14px;
           font-weight: bold;
           text-transform: uppercase;
-          font-family: Inter;
+          font-family: Noto Sans KR;
           line-height: 0;
         }
 
