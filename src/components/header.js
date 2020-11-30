@@ -4,7 +4,7 @@ import React from "react"
 import logo from "../../static/images/logo_.svg"
 
 const Header = ({siteTitle}) => (
-    <header>
+    <header className={"header"}>
         <div className={"container"}>
             <div className={"top-menu"}>
                 <div className={"logo"}>
