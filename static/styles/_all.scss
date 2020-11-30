@@ -51,6 +51,7 @@ body {
     padding: 100px 0 100px 0;
     background-color: #fdfaff;
     border-radius: 0px 0px 40px 40px;
+    word-break: keep-all;
 
     h1 {
       font-style: normal;
@@ -512,4 +513,8 @@ body {
       }
     }
   }
+}
+
+.icon {
+  width: 30px;
 }

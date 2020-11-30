@@ -13,6 +13,7 @@ import Header from "./header"
 import "../../static/styles/main.scss"
 import logo from "../../static/images/logo_.svg"
 import iconInstagram from "../../static/images/icon-instagram.svg"
+import iconFacebook from "../../static/images/icon-facebook.svg"
 
 const Layout = ({children}) => (
     <StaticQuery query={graphql`
@@ -45,7 +46,7 @@ const Layout = ({children}) => (
                         </div>
 
                         <div className={"col-2"}>
-                            <div className={"widget__item"}>
+                            {/* <div className={"widget__item"}>
                                 <ul className={"links"}>
                                     <h4>HiStaff</h4>
                                     <ul>
@@ -55,11 +56,11 @@ const Layout = ({children}) => (
                                         <li><a className={"links__special"} href={"https://feedback.histaff.io/"} target={"_blank"} title={"We look forward to receiving your great feedback"}>Feedback</a></li>
                                     </ul>
                                 </ul>
-                            </div>
+                            </div> */}
                         </div>
 
                         <div className={"col-2"}>
-                            <div className={"widget__item"}>
+                            {/* <div className={"widget__item"}>
                                 <div className={"links"}>
                                     <h4>Support</h4>
                                     <ul>
@@ -68,13 +69,14 @@ const Layout = ({children}) => (
                                         <li><Link to="/terms" title={"Terms Of Use"}>Terms Of Use</Link></li>
                                     </ul>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
 
                         <div className={"col-3"}>
                             <div className={"widget__item"}>
                                 <div className={"social"}>
-                                    <a href="https://www.instagram.com/official_moonda/" target={"_blank"} title={"Instagram"}><img alt={"Instagram"} src={iconInstagram}/></a>
+                                    <a href="https://www.instagram.com/official_moonda/" target={"_blank"} title={"Instagram"}><img class={"icon"} src={iconInstagram}/></a>
+                                    <a href="https://m.facebook.com/official.moonda/" target={"_blank"} title={"Facebook"}><img class={"icon"} src={iconFacebook}/></a>
                                 </div>
                             </div>
                         </div>

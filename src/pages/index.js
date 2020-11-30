@@ -1,4 +1,4 @@
-import React, { useRef } from "react"
+import React, { useRef, useState, onChange } from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import smart_phone from "../../static/images/index/smart_phone.png";
@@ -7,14 +7,29 @@ import lend_context2 from "../../static/images/index/lend_context2.png";
 import lend_context3 from "../../static/images/index/lend_context3.png";
 import lend_context4 from "../../static/images/index/lend_context4.png";
 import lend_context5 from "../../static/images/index/lend_context5.png";
-
-
+import axios from "axios";
 
 const IndexPage = () => { 
     const myRef = useRef(null);
     const executeScroll = () => myRef.current.scrollIntoView({behavior: 'smooth'});
 
-    
+    const [emailOrPhone, setEmailOrPhone] = useState('');
+    const [expectaionMessage, setExpectaionMessage] = useState('');
+
+    const sendSurvey = async () => {
+        console.log({emailOrPhone,expectaionMessage});
+        const response = await axios.post(
+            "http://api.moonda.kr/event/open",
+            {
+                emailOrPhone : emailOrPhone, 
+                expectationMessage: expectaionMessage
+            },
+        ).then(response => {console.log(response)})
+        .catch(error => {console.log('error : ',error.response)});
+        window.confirm("전송되었습니다.");
+        console.log(response);
+    }
+
     return (
         <Layout>
             <SEO title="문화센터 다모아, 문다!"/>
@@ -133,17 +148,17 @@ const IndexPage = () => {
             </div>
 
             <div id="surveyComp" ref={myRef} className={"survey-component"}>
-                    <div className={"head-content"}>
-                        <h2>2021년 1월, 문다가 여러분을 찾아갑니다.</h2>
-                        <p>문다 앱이 출시되면 가장 먼저 알려드릴게요.</p>
-                        <div className={"text-input-wrapper"}>
-                            <input type="email" placeholder="전화번호 또는 이메일"></input>
-                            <textarea rows='5' placeholder="기대평(선택)"></textarea>
-                            <button>
-                                알림 받기
-                            </button>
-                        </div>
+                <div className={"head-content"}>
+                    <h2>2021년 1월, 문다가 여러분을 찾아갑니다.</h2>
+                    <p>문다 앱이 출시되면 가장 먼저 알려드릴게요.</p>
+                    <div className={"text-input-wrapper"}>
+                        <input type="email" onChange={e => setEmailOrPhone(e.target.value)} placeholder="전화번호 또는 이메일"></input>
+                        <textarea rows='5' onChange={e => setExpectaionMessage(e.target.value)} placeholder="기대평(선택)"></textarea>
+                        <button onClick={sendSurvey}>
+                            알림 받기
+                        </button>
                     </div>
+                </div>
             </div>
         </Layout>
     )
