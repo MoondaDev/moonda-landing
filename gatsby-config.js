@@ -33,7 +33,7 @@ module.exports = {
             resolve: 'gatsby-plugin-web-font-loader',
             options: {
                 google: {
-                    families: ['PT Serif'],
+                    families: ['PT Serif', 'Noto Sans KR'],
                 },
                 custom: {
                     families: ['Inter'],

@@ -8,6 +8,7 @@ import lend_context3 from "../../static/images/index/lend_context3.png";
 import lend_context4 from "../../static/images/index/lend_context4.png";
 import lend_context5 from "../../static/images/index/lend_context5.png";
 import axios from "axios";
+import { Helmet } from "react-helmet";
 
 const IndexPage = () => { 
     const myRef = useRef(null);
@@ -33,6 +34,9 @@ const IndexPage = () => {
     return (
         <Layout>
             <SEO title="문화센터 다모아, 문다!"/>
+            <Helmet>
+                <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"></meta>
+            </Helmet>
             <div className={"page-header home"}>
                 <div className={"container"}>
                     <div className={"row"}>
@@ -41,7 +45,7 @@ const IndexPage = () => {
                             <div className={"my-button"} onClick={executeScroll}>
                                 앱 출시 알림 받기
                             </div>
-                            <p>이미 <b>1,750명</b>이 출시 알림을 신청했습니다.</p>
+                            <p>이미 <b style="font-weight: bold">17명</b>이 출시 알림을 신청했습니다.</p>
                         </div>
                         <div className={"col-4"}>
                             <img alt={"Dashboard"} src={smart_phone}/> 
