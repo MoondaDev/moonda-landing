@@ -1,5 +1,5 @@
 module.exports = {
-    pathPrefix: "/moonda-landing",
+    pathPrefix: "/",
     siteMetadata: {
         title: `문다`,
         description: `문화센터 다모아, 문다!`,

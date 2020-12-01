@@ -153,7 +153,8 @@ const IndexPage = () => {
 
             <div id="surveyComp" ref={myRef} className={"survey-component"}>
                 <div className={"head-content"}>
-                    <h2>2021년 1월, 문다가 여러분을 찾아갑니다.</h2>
+                    <h2>2021년 2월,<br/>
+                        문다가 여러분을 찾아갑니다.</h2>
                     <p>문다 앱이 출시되면 가장 먼저 알려드릴게요.</p>
                     <div className={"text-input-wrapper"}>
                         <input type="email" onChange={e => setEmailOrPhone(e.target.value)} placeholder="전화번호 또는 이메일"></input>
