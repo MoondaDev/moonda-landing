@@ -192,6 +192,7 @@ body {
       color: #ffffff;
       padding: 10px 0;
       text-align: center;
+      width: 500px;
     }
 
     .text-input-wrapper {
@@ -211,7 +212,7 @@ body {
         display: block;
         border-radius: 5px;
         border: none;
-
+        resize: vertical;
   
 
         -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */

@@ -82,7 +82,7 @@ const Layout = ({children}) => (
                     </div>
 
                     <div className={"copyright"}>
-                        <p>Copyright {new Date().getFullYear()}, {` `} <a href="https://histaff.io" title={"HiStaff"}>HiStaff</a>. All rights reserved.</p>
+                        <p>Copyright {new Date().getFullYear()}, {` `} <a href="https://www.moonda.kr" title={"Moonda"}>Moonda</a>. All rights reserved.</p>
                     </div>
                 </div>
             </footer>
