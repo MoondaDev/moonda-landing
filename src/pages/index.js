@@ -160,7 +160,7 @@ const IndexPage = () => {
                     </span>
                     <div className={"text-input-wrapper"}>
                         
-                            <a className={"my-button2"}href="https://forms.gle/Gr8VUC2aFjhwgjo66">알림 받기</a>
+                            <a className={"my-button2"}href="https://forms.gle/Gr8VUC2aFjhwgjo66"><b>알림 신청하기</b></a>
                        
                     </div>
                 </div>
