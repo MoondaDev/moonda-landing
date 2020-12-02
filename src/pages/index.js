@@ -159,11 +159,9 @@ const IndexPage = () => {
                         <p>문다 앱이 출시되면 가장 먼저 알려드릴게요.</p>
                     </span>
                     <div className={"text-input-wrapper"}>
-                        <input type="email" onChange={e => setEmailOrPhone(e.target.value)} placeholder="전화번호 또는 이메일"></input>
-                        <textarea rows='5' onChange={e => setExpectaionMessage(e.target.value)} placeholder="기대평(선택)"></textarea>
-                        <button onClick={sendSurvey}>
-                            알림 받기
-                        </button>
+                        
+                            <a className={"my-button2"}href="https://forms.gle/Gr8VUC2aFjhwgjo66">알림 받기</a>
+                       
                     </div>
                 </div>
             </div>
