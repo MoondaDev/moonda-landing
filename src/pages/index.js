@@ -45,7 +45,7 @@ const IndexPage = () => {
                             <div className={"my-button"} onClick={executeScroll}>
                                 앱 출시 알림 받기
                             </div>
-                            <p>이미 <b>17명</b>이 출시 알림을 신청했습니다.</p>
+                            <p>이미 <b>123명</b>이 출시 알림을 신청했습니다.</p>
                         </div>
                         <div className={"col-4"}>
                             <img alt={"Dashboard"} src={smart_phone}/> 
