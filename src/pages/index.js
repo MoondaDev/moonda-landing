@@ -7,6 +7,8 @@ import lend_context2 from "../../static/images/index/lend_context2.png";
 import lend_context3 from "../../static/images/index/lend_context3.png";
 import lend_context4 from "../../static/images/index/lend_context4.png";
 import lend_context5 from "../../static/images/index/lend_context5.png";
+import google_play from "../../static/images/index/google_play.svg";
+import ios from "../../static/images/index/apple.svg";
 import axios from "axios";
 import { Helmet } from "react-helmet";
 
@@ -45,7 +47,7 @@ const IndexPage = () => {
                             <div className={"my-button"} onClick={executeScroll}>
                                 앱 출시 알림 받기
                             </div>
-                            <p>이미 <b>365명</b>이 출시 알림을 신청했습니다.</p>
+                            <p>이미 <b>370명</b>이 출시 알림을 신청했습니다.</p>
                         </div>
                         <div className={"col-4"}>
                             <img alt={"Dashboard"} src={smart_phone}/> 
@@ -154,18 +156,34 @@ const IndexPage = () => {
             <div id="surveyComp" ref={myRef} className={"survey-component"}>
                 <div className={"head-content"}>
                     <span className={"text-input-header"}>
-                        <h2>2021년 2월,<br/>
-                            문다가 여러분을 찾아갑니다.</h2>
-                        <p>문다 앱이 출시되면 가장 먼저 알려드릴게요.</p>
+                        <h2>
+                            문다는 취미생활이 여러분의 삶을
+                            <br />더 행복하게 해줄 거라고 믿어요.
+                           </h2>
+                            <p>지금 바로 문다와 함께 새로운 취미생활을 시작해보세요!</p>
                     </span>
-                    <div className={"text-input-wrapper"}>
-                        
-                            <a className={"my-button2"}href="https://forms.gle/Gr8VUC2aFjhwgjo66"><b>알림 신청하기</b></a>
-                       
-                    </div>
-                </div>
-            </div>
-        </Layout>
+
+                <div className={"text-input-wrapper"}>
+                    <a
+                    className={"my-button2"}
+                    href="https://apps.apple.com/kr/app/%EB%AC%B8%EB%8B%A4-%EC%9A%B0%EB%A6%AC%EB%8F%99%EB%84%A4-%EB%AC%B8%ED%99%94%EC%84%BC%ED%84%B0-%EB%A7%9E%EC%B6%A4%EC%A0%95%EB%B3%B4-%EC%95%B1/id1547412014"
+                        >
+              <img alt={"ios"} src={ios} />
+              &nbsp; &nbsp;
+              <b>App Store</b>
+            </a>
+            <a
+              className={"my-button2"}
+              href="https://play.google.com/store/apps/details?id=com.moonda"
+            >
+              <img alt={"google-play"} src={google_play} />
+              &nbsp; &nbsp;
+              <b>Google Play</b>
+            </a>
+          </div>
+        </div>
+      </div>
+    </Layout>
     )
 }
 
