@@ -33,28 +33,45 @@ const IndexPage = () => {
         console.log(response);
     }
 
-    return (
-        <Layout>
-            <SEO title="문화센터 다모아, 문다!"/>
-            <Helmet>
-                <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"></meta>
-            </Helmet>
-            <div className={"page-header home"}>
-                <div className={"container"}>
-                    <div className={"row"}>
-                        <div className={"col-8"}>
-                            <h1>클릭 한 번으로<br/>나에게 맞는<br/>우리동네 취미강좌 추천</h1>
-                            <div className={"my-button"} onClick={executeScroll}>
-                                앱 다운로드 받기
-                            </div>
-                            <p>이미 <b>370명</b>이 출시 알림을 신청했습니다.</p>
-                        </div>
-                        <div className={"col-4"}>
-                            <img alt={"Dashboard"} src={smart_phone}/> 
-                        </div>
-                    </div>
-                </div>
+  return (
+    <Layout>
+      <SEO title="문화센터 다모아, 문다!" />
+      <Helmet>
+        <meta
+          http-equiv="Content-Security-Policy"
+          content="upgrade-insecure-requests"
+        ></meta>
+      </Helmet>
+      <div className={"page-header home"}>
+        <div className={"container"}>
+          <div className={"row"}>
+            <div className={"col-8"}>
+              <h1>
+                클릭 한 번으로
+                <br />
+                나에게 맞는
+                <br />
+                우리동네 취미강좌 추천
+              </h1>
+              <p>지금 바로 문다를 만나보세요!</p>
+              <br />
+              <div className={"my-button"} onClick={executeScroll}>
+                앱 다운로드 받기
+              </div>
+
+              <br />
+              <p>이미 동네에서 공방을 운영 중이신가요?</p>
+              <br />
+              <a href="https://forms.gle/vu4sLZ1tu3QFe78KA">
+                <div className={"my-button"}>문다와 함께하기</div>
+              </a>
             </div>
+            <div className={"col-4"}>
+              <img alt={"Dashboard"} src={smart_phone} />
+            </div>
+          </div>
+        </div>
+      </div>
 
             <div className={"container"}>
                 <div className={"features"}>
